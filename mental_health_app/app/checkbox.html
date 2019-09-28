@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Stress Testing</title>
+    <link rel="stylesheet" href="simplequiz/css/style.css">
+    <script src="file:///C:/Users/Orijajogunlo/Desktop/jquery-1.11.3.js"></script>
+    <script src="simplequiz/js/script.js"></script>
+    <style>
+        body{
+    background-color: white;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+h5,h4{
+  text-align: left;
+}
+.container{
+    width: 60%; background: #eb7c8f;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
+}
+/*  #199fdb*/
+header{
+    text-align: center;
+    border-bottom: white dashed 1px;
+}
+
+header h1{
+    margin: 0;
+    padding:0;
+}
+
+header p{
+    padding: 0;
+    margin-top: 5px;
+    color: white;
+}
+
+section{
+    min-height: 400px;
+}
+
+footer{
+    text-align: center;
+}
+
+input[type="submit"]{
+    background: #f2f5f8;
+    border: 0;
+    color: #fff;
+    padding:10px 15px;
+    cursor: pointer;
+}
+#results h3{
+    background-color:#f06226;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#results span{
+    color: #000;
+    font-weight: bold;
+}
+    
+    </style>
+</head>
+<body>
+	<div class="container">
+    <header>
+        <h1>Stress Testing</h1>
+        <p>Test your stress level</p>
+    </header>
+        <section>
+            <div id="results"></div>
+            <form name="quizForm" onsubmit="submitAnswers(); return false">
+                <h3>1. Do you experience any of the following symptoms: headaches, chest pain, muscle tension, nausea, or changes in sex drive?</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> a. Never <br> 
+                <input type="radio" name="q1" value="b" id="q1b"> b. Rarely<br>
+                <input type="radio" name="q1" value="c" id="q1c"> c.Sometimes <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Often <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Very Often <br>
+                
+                <h3>2. Do you experience fatigue and/or struggle to fall or stay asleep?</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> a. Never <br> 
+                <input type="radio" name="q1" value="b" id="q1b"> b. Rarely<br>
+                <input type="radio" name="q1" value="c" id="q1c"> c.Sometimes <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Often <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Very Often <br>
+                
+                <h3>3. Do you worry excessively and feel overwhelmed with responsibilities?</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> a. Never <br> 
+                <input type="radio" name="q1" value="b" id="q1b"> b. Rarely<br>
+                <input type="radio" name="q1" value="c" id="q1c"> c.Sometimes <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Often <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Very Often <br>
+                
+                <h3>4. Do you struggle to focus on tasks or stay motivated?</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> a. Never <br> 
+                <input type="radio" name="q1" value="b" id="q1b"> b. Rarely<br>
+                <input type="radio" name="q1" value="c" id="q1c"> c.Sometimes <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Often <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Very Often <br>
+                
+                <h3>5. Do you experience irritability, sadness, or anger?</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> a. Never <br> 
+                <input type="radio" name="q1" value="b" id="q1b"> b. Rarely<br>
+                <input type="radio" name="q1" value="c" id="q1c"> c.Sometimes <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Often <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Very Often <br>
+
+                <h3>6. Do you have little appetite or find that you are overeating?</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> a. Never <br> 
+                <input type="radio" name="q1" value="b" id="q1b"> b. Rarely<br>
+                <input type="radio" name="q1" value="c" id="q1c"> c.Sometimes <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Often <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Very Often <br>
+
+                <h3>7. Do you struggle to regulate how much caffeine, alcohol, or tobacco you use?</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> a. Never <br> 
+                <input type="radio" name="q1" value="b" id="q1b"> b. Rarely<br>
+                <input type="radio" name="q1" value="c" id="q1c"> c.Sometimes <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Often <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Very Often <br>
+
+                <h3>8. Do you struggle to regulate how much caffeine, alcohol, or tobacco you use?</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> a. Never <br> 
+                <input type="radio" name="q1" value="b" id="q1b"> b. Rarely<br>
+                <input type="radio" name="q1" value="c" id="q1c"> c.Sometimes <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Often <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Very Often <br>
+
+                <h3>9. Do you withdraw from others or feel overwhelmed in groups of people?</h3>
+                <input type="radio" name="q1" value="a" id="q1a"> a. Never <br> 
+                <input type="radio" name="q1" value="b" id="q1b"> b. Rarely<br>
+                <input type="radio" name="q1" value="c" id="q1c"> c.Sometimes <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Often <br>
+                <input type="radio" name="q1" value="d" id="q1d"> d.Very Often <br>
+
+                <form> <br> <br>
+                        Enter your name: <br>
+                        <input type="text" name="Name"><br>
+                      </form>
+                
+                <br><br>
+                <input type="submit" value="Submit Answers">
+            </form>
+        </section>
+        
+    </div>
+    <script src = "checkbox.js"></script>
+    
+</body>
+</html>
