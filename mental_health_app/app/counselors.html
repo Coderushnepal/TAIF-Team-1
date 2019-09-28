@@ -1,12 +1,159 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Counselors</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <style>
+        .dropbtn {
+          background-color: #428bca;
+          color: rgb(235, 225, 225);
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: transparent} 
+
+        .some-page-wrapper {
+  display: flex;
+  margin: 15px;
+  background-color: rgb(246, 250, 246);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.orange-column {
+  background-color: rgb(246, 250, 246);
+  height: 100px;
+}
+
+.blue-column {
+  background-color: rgb(246, 250, 246);
+  height: 100px;
+}
+
+.green-column {
+  background-color: rgb(246, 250, 246);
+  height: 500px;
+
+}
+
+        </style>
+     </head>
+
+              
 <body>
-    
-</body>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          
+          <a class="blog-nav-item active" href="index.html">Home</a>
+      
+          <div class="dropdown">
+              <button class="dropbtn">Mental Test</button>
+                <div class="dropdown-content">
+                  <a href="#">Depression Level Test</a>
+                  <a href="#">Anxiety Level Test</a>
+                  <a href="#">Stress Level Test</a>
+                </div>
+                </div>
+
+          
+          <a class="blog-nav-item" href="#">About</a>
+        </nav>
+      </div>
+    </div><br>
+    <div class='some-page-wrapper'>
+        <div class='row'>
+          <div class='column'>
+            <div class='green-column'>
+                <img src="dac1.jpg" class="img-responsive" width="200" height="200">
+                <p> <h2>Dr. Anurag Misra</h2></p> 
+                <p> Consultant, Department of Neuro-Psychiatry</p>
+                <a href="#" >Book an appointment</a><br>
+            </div>
+          </div>
+          <div class='column'>
+            <div class='blue-column'>
+                <img src="dac2.jpg" class="img-responsive" width="200" height="200">
+                <p> <h2>Dr. Rishav Koirala</h2></p> 
+                <p> Consultant Psychiatrist</p>
+                <a href="#"> Book an appointment</a><br>
+            </div>
+          </div>
+              <div class='column'>
+            <div class='orange-column'>
+                <img src="dac3.jpg" class="img-responsive" width="200" height="200">
+                <p> <h2>Dr. Shreeya Gyanwali</h2></p> 
+                <p>Psychiatry</p>
+                <a href="#">Book an appointment</a><br>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      
+           
+   
+   
+  </body>
 </html>
