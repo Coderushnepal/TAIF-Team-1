@@ -171,8 +171,11 @@
                         <input type="radio" name="q1" value="d" id="q1d"> e.Very Often <br><br><br>
         
                     <br>
-                    
-                    <button type="submit" id="submit" class="btn" onclick="myFunction()">Submit</button>
+                    <div class="col m8 offset-m2 submit">
+                        <button type="submit" id="submit" class="btn" onclick="myFunction()">Submit</button>
+                   
+                    </div>
+                    <!-- <button type="submit" id="submit" class="btn" onclick="myFunction()">Submit</button> -->
                     <!-- <input type="submit" value="Submit Answers" button onclick = "myfunction"></button> -->
                 </form>
           </div><!-- /.blog-post -->
@@ -200,9 +203,14 @@
     </div><!-- /.container -->
 
     <script>
-        function myfunction(){
+        function myFunction(){
 
           alert("you have high depression");
+          // alert("Do you want to consult counselors?")
+          var ask = prompt("Do you want to consult counselors?", "Yes");
+            if (ask != null) {
+        document.getElementById("demo").innerHTML = "counselors.html";
+  };
         }
     
     </script>
